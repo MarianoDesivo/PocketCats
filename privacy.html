@@ -77,8 +77,8 @@
     <h2>2. Data We Collect</h2>
     <p>We collect the following types of information to provide and improve the app:</p>
     <ul>
-        <li><strong>Camera photos:</strong> When you take a photo of a cat, the image is processed on-device for cat detection and background removal. Photos are stored locally on your device.</li>
-        <li><strong>Location data:</strong> Approximate location (within ~50-100 meters) is recorded with cat sightings to place them on the shared map. GPS coordinates are obfuscated for privacy.</li>
+        <li><strong>Camera photos:</strong> When you take a photo of a cat, the image is processed on-device for cat detection and background removal. Photos are stored locally on your device by default. You have the option to share a sighting (photo and details) with the community map, which uploads it to our server.</li>
+        <li><strong>Location data:</strong> Approximate location is recorded with cat sightings to place them on the shared map. GPS coordinates are obfuscated for privacy.</li>
         <li><strong>Device identifier:</strong> A stable device ID (Android Advertising ID or a random identifier) is used to distinguish sightings from different devices. This is not linked to your personal identity.</li>
         <li><strong>User-entered data:</strong> Cat names, descriptions, colors, behaviors, breed, and missing cat reports that you voluntarily enter.</li>
         <li><strong>App usage logs:</strong> Local log files for debugging purposes, stored only on your device.</li>
@@ -87,7 +87,7 @@
     <h2>3. How We Use Your Data</h2>
     <ul>
         <li><strong>On-device processing:</strong> Camera images are analyzed locally using ML Kit for cat detection and background removal. Images are not sent to external servers for this processing.</li>
-        <li><strong>Shared sighting map:</strong> Cat sighting data (location, photos, descriptions) is shared with other users through our API server to populate the community map. Your device ID is used to identify your sightings but is not displayed to other users.</li>
+        <li><strong>Shared sighting map (optional):</strong> When you choose to share a sighting, cat sighting data (location, photos, descriptions) is uploaded to our API server to populate the community map. Your device ID is used to identify your sightings but is not displayed to other users. Sharing is opt-in — nothing is uploaded without your action.</li>
         <li><strong>App improvement:</strong> Local logs help us debug issues and improve the app experience.</li>
     </ul>
 
@@ -109,7 +109,7 @@
 
     <h2>6. Data Storage and Security</h2>
     <ul>
-        <li>All photos and sighting data are stored locally in an SQLite database and photo directory on your device.</li>
+        <li>All photos and sighting data are stored locally in an SQLite database and photo directory on your device. Only sightings you explicitly choose to share are uploaded to our server.</li>
         <li>Data shared with our API server is transmitted over HTTPS.</li>
         <li>We do not sell, rent, or trade your personal information to third parties.</li>
     </ul>
